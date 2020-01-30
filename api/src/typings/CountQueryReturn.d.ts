@@ -1,0 +1,1 @@
+type CountQueryReturn = { count: string }[];

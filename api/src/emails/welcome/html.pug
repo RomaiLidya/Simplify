@@ -1,0 +1,28 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(name='viewport', content='width=device-width')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto')
+    title Reset Password
+    style(type='text/css').
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: #505d68;
+      }
+      h1 {
+        line-height: 2.8rem;
+        font-weight: 900;
+      }
+
+  body(itemscope='', itemtype='http://schema.org/EmailMessage')
+    p Hello #{displayName},
+    br
+    p Welcome to Simplify.
+    br
+    p This is your system generated credentials:
+    p Login Name: #{loginName}
+    p Password: #{newPassword}
+    br
+    p Please remember to change your password upon #[a(href='https://www.google.com') login].
